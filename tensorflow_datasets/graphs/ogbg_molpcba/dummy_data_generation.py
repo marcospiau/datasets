@@ -40,7 +40,7 @@ FLAGS = flags.FLAGS
 
 # Type hints.
 ArrayDict = Dict[Text, np.ndarray]
-ReadWritePath = type_utils.ReadWritePath
+Path = type_utils.Path
 
 
 def seed_prngs(seed: int):
@@ -122,7 +122,7 @@ def combine_graph_data(graphs: Iterable[ArrayDict]) -> ArrayDict:
   return graphs_dict
 
 
-def save_to_path(path: ReadWritePath,
+def save_to_path(path: Path,
                  graphs: Iterable[ArrayDict],
                  splits: ArrayDict):
   """Save all generated data as OGB does."""
