@@ -59,6 +59,9 @@ REQUIRED_PKGS = [
     'dataclasses;python_version<"3.7"',
     'typing_extensions;python_version<"3.8"',
     'importlib_resources;python_version<"3.9"',
+    # Used for caching
+    'ftfy', #brwac uses this
+    'seqio' # used for caching tasks
 ]
 
 TESTS_REQUIRE = [
